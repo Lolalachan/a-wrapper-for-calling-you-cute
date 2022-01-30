@@ -14,7 +14,7 @@ def authentication(func):
             inp_name=input('your username===>').strip()
             inp_pwd=input('your password===>').strip()
             
-            with open('文本.txt',mode='rt',encoding='utf-8') as f:
+            with open('user_info.txt',mode='rt',encoding='utf-8') as f:
                 for line in f:
                     username,password= line.strip().split(":")
                     if inp_name == username and inp_pwd == password:
