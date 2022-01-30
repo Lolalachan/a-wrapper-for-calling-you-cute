@@ -22,7 +22,7 @@ def authentication(func):
                         func(*args,**kwargs)
                         break
                 else:
-                    print('Please re-enter your account and password.')
+                    print('Please re-enter your name and password.')
         
     return wrapper
         
